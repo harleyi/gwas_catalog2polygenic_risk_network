@@ -32,6 +32,12 @@ _Note: if your trait of interest does not have GWAS results the rest of the tuto
 16. copy and paste the contents to another sheet. 
 17. convert P-value column to scientific notation.
 _Note: these numbers are of the format 5 x 10-6. One can use the text to columns trick above – copy to a new column and set "x" and not ":" as in step 11 and then repeat this for the 10-6 values using "-" as the delimiter. Following this, the following forumla is_
+18. Copy the new P-value column and paste it in place using "Paste Special" and select values (not formulas)
+19. Delete intervening columns. 
+20. add filter to P value column by selecting "less than or equal to" and entering 5E-8
+21. select all. 
+22. copy the genome-wide significant filtered variants to a new sheet. 
+23. 
 
 
 
