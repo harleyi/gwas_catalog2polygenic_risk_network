@@ -37,7 +37,9 @@ _Note: these numbers are of the format 5 x 10-6. One can use the text to columns
 20. add filter to P value column by selecting "less than or equal to" and entering 5E-8
 21. select all. 
 22. copy the genome-wide significant filtered variants to a new sheet. 
-23. 
+23. Sort by chromosome and then position
+24. Make a Region column
+25. m
 
 
 
