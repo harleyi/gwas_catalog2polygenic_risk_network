@@ -40,7 +40,10 @@ _Note: these numbers are of the format 5 x 10-6. One can use the text to columns
 23. Sort by chromosome and then position
 24. Make a Region column
 25. enter the value 1 in first row of the Region column.
-26. 
+26. In the second row of the Region column, enter the following formula to specify a window of 250,000 base pairs around each lead variant: 
+`=IF(N2=N3, IF(O3<(O2+250000), Q2, Q2+1), Q2+1)`
+_Note: the correctness of this formula depends on the rows being sorted by chromosome and position and on the first row having Region #1 in it._
+27. copy and paste this formula into each of the rows in the Region column except for the first row. 
 
 
 
