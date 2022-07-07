@@ -39,7 +39,8 @@ _Note: these numbers are of the format 5 x 10-6. One can use the text to columns
 22. copy the genome-wide significant filtered variants to a new sheet. 
 23. Sort by chromosome and then position
 24. Make a Region column
-25. m
+25. enter the value 1 in first row of the Region column.
+26. 
 
 
 
