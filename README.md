@@ -76,14 +76,23 @@ _Note: You may need to modify the formula so that it points to the correct colum
 
 ## Step 2. annotate the regions with putative causal genes 
 _Note: here we use published results from open targets genetics locus 2 gene pipeline, using an alternative approach, such as FUMA [https://fuma.ctglab.nl/] to map SNPs to putative causal genes could also be used_
+
 39. go to open targets genetics. 
 40. search for your trait of interest.
 41. one-by-one select each published GWAS:    
     42. save the tsv (tab separated values) file and open it in excel or similar spreadsheet viewer.   
     43. for each Lead Variant with an entry in the L2G column, annotate the corresponding region from the "genome-wide significant regions and the corresponding reported lead variant" file from Step 1.   
-    _Note: According to Open Targets Genetics, the Lead Variants with L2G annotation represent "Genes prioritised by our locus-to-gene model with score ≥ 0.5"_    
-    See L2G description [https://genetics-docs.opentargets.org/our-approach/prioritising-causal-genes-at-gwas-loci-l2g] for further details.   
-    44.  
+    _Note: According to Open Targets Genetics, the Lead Variants with L2G annotation represent "Genes prioritised by our locus-to-gene model with score ≥ 0.5" See L2G description [https://genetics-docs.opentargets.org/our-approach/prioritising-causal-genes-at-gwas-loci-l2g] for further details._   
+    
+44. Once you have done this for all published GWAS studies, you will have a list of the putative causal genes for your trait of interest. 
+_Note: Your list of putative causal genes will almost certainly be less than the number of regions. In our experience, L2G has assigned a putative casual gene for approximately 50-60% of GWAS regions for several immune-mediated disease traits. An alternative is to manually annotate remaining loci as was done in Systemic Lupus as a Genetic disease [https://pubmed.ncbi.nlm.nih.gov/35149194/] DOI: 10.1016/j.clim.2022.108953 [https://doi.org/10.1016/j.clim.2022.108953]
+
+45. copy the L2G column and paste it into a new column
+46. use text to columns with "," as the separator to remove any commas which may have been used to separate putative causal genes in the scenario where L2G identified two likely putative causal genes (e.g. eQTL controlling the expression of multiple genes.)
+47. copy any genes from the second column to the bottom of the list of genes. 
+
+## Step 3. Use putative causal gene list from step 2 to query String database for disease gene protein protein interaction network. 
+
 
 
 
