@@ -91,7 +91,7 @@ _Note: Your list of putative causal genes will almost certainly be less than the
 46. use text to columns with "," as the separator to remove any commas which may have been used to separate putative causal genes in the scenario where L2G identified two likely putative causal genes (e.g. eQTL controlling the expression of multiple genes.)
 47. copy any genes from the second column to the bottom of the list of genes. 
 
-## Step 3. Use putative causal gene list from step 2 to query String database for disease gene protein protein interaction network. 
+## Step 3. Use putative causal gene list from step 2 to query String database in order to obtain and compare disease gene protein protein interaction network(s). 
 48. Go to STRING [https://string-db.org/]
 49. click search
 50. Click multiple proteins on the left hand side
@@ -114,8 +114,24 @@ _Note: Your list of putative causal genes will almost certainly be less than the
 
 A simple calculator can be found: https://systems.crump.ucla.edu/hypergeometric/index.php
 
-For our example, we will take two networks, one with 54 nodes and one with 127 nodes.
-The Union of these two networks is a gene network with 172 nodes and the intersection 
+For our example, we will take two networks, a first network with 54 nodes and a second network with 127 nodes.
+
+The Union of these two networks is a gene network with 172 nodes and the intersection 9 nodes. 
+
+Since there are 19566 distinct genes in the current release (v11.5) of the STRING interaction network for _Homo sapiens_, the calculation can be setup as follows: 
+
+   – *k = 9* (the intersection of the two disease networks is the number of successes).   
+   – *s = 54* (the sample size is the number of nodes in the first gene network).   
+   – *M = 127* (the number of successes in the population is the number of nodes in the second gene network).   
+   – *N = 19566-54 = 19439* (the population size is the entire Homo sapiens gene network with the 54 genes in the first network removed).   
+
+
+Output:   
+`Parameters: 9, 54, 127, 19439`   
+`expected number of successes = 0.352795925716343`   
+`the results are over enriched 25.51 fold compared to expectations`   
+`hypergeometric p-value = 6.755808180896782e-11`   
+   
 
 
 
