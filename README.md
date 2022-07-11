@@ -15,7 +15,7 @@ This tutorial is a walk-through for generating a putative causal gene network fr
 [overview]: https://github.com/harleyi/gwas_catalog2polygenic_risk_network/blob/main/images/OVERVIEWScreen%20Shot%202022-07-11%20at%204.21.37%20PM.png
 
 overview 
-<img width="51" alt="image" src="[https://user-images.githubusercontent.com/104035002/177649019-076356c5-dbbd-4741-a3d3-030530337632.png](https://github.com/harleyi/gwas_catalog2polygenic_risk_network/blob/main/images/OVERVIEWScreen%20Shot%202022-07-11%20at%204.21.37%20PM.png)">
+<img width="51" alt="image" src="https://user-images.githubusercontent.com/104035002/177649019-076356c5-dbbd-4741-a3d3-030530337632.png">
 
 
 ## Step 1: get genome-wide significant regions and corresponding lead variants
