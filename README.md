@@ -34,7 +34,9 @@ _Note: if your trait of interest does not have GWAS results the rest of the tuto
 15. in the edit menu, select all. 
 16. copy and paste the contents to another sheet. 
 17. convert P-value column to scientific notation.
+
 _Note: these numbers are of the format 5 x 10-6. One can use the text to columns trick above – copy to a new column and set "x" and not ":" as in step 11 and then repeat this for the 10-6 values using "-" as the delimiter. Following this, the following forumla is_
+
 18. Copy the new P-value column and paste it in place using "Paste Special" and select values (not formulas)
 19. Delete intervening columns. 
 20. add filter to P value column by selecting "less than or equal to" and entering 5E-8
@@ -50,18 +52,24 @@ _Note: these numbers are of the format 5 x 10-6. One can use the text to columns
 27. enter the value 1 in first row of the Region column.
 28. In the second row of the Region column, enter the following formula to specify a window of 250,000 base pairs around each lead variant: 
 `=IF(N2=N3, IF(O3<(O2+250000), Q2, Q2+1), Q2+1)`
+
 _Note1: You may need to modify the formula so that it points to the correct column – In our example N is the chromosome column, O is the position column and Q is the Region column._
+
 _Note2: the correctness of this formula depends on the rows being sorted by chromosome and position and on the first row having Region #1 in it._
+
 _Note3: this formula works as follows If N2 equals N3, it means the chromosome has not changed, so check to see if the position is within the window. If so, extend the region, if not, start a new region. If N2 does not equal N3, we are at a new region, so the region counter (Q2) should be increased._ 
+
 29. copy and paste this formula into each of the rows in the Region column except after the first row. 
 ### Select Lead variants
 31. copy Regions column and paste as values into the same column
 32. sort by Region, then P-value
-33. Make a "Final Table" column
+33. Make a "Lead Variant" column
 34. In the second row of the Final Table column, enter this forumla to specify the lead variant: 
 `=IF(Q1=Q2, 0, 1)`
+
 _Note: You may need to modify the formula so that it points to the correct column – In our example Q is the Region column._
-35. 
+
+35. copy Lead Variant
 
 
 
