@@ -12,6 +12,9 @@ This tutorial is a walk-through for generating a putative causal gene network fr
 [https://string-db.org]
 
 ## Graphical Overview:
+
+![gwas_l2g_STRING_polygenic_networks_overview2](https://user-images.githubusercontent.com/104035002/178368856-be6fa557-1a18-4634-8a02-3f1e23ea3364.jpg)
+
 [overview]: https://github.com/harleyi/gwas_catalog2polygenic_risk_network/blob/main/images/OVERVIEWScreen%20Shot%202022-07-11%20at%204.21.37%20PM.png
 
 overview 
