@@ -58,7 +58,7 @@ _Note3: this formula works as follows If N2 equals N3, it means the chromosome h
 31. copy Regions column and paste as values into the same column
 32. sort by Region, then P-value
 33. Make a "Final Table" column
-34. In the second row of the Final Table column, enter the following forumla to specify which variant is the lead variant: 
+34. In the second row of the Final Table column, enter this forumla to specify the lead variant: 
 `=IF(Q1=Q2, 0, 1)`
 _Note: You may need to modify the formula so that it points to the correct column – In our example Q is the Region column._
 35. 
