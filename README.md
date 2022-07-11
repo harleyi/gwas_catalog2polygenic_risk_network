@@ -37,15 +37,17 @@ _Note: these numbers are of the format 5 x 10-6. One can use the text to columns
 20. add filter to P value column by selecting "less than or equal to" and entering 5E-8
 21. select all. 
 22. copy the genome-wide significant filtered variants to a new sheet. 
-23. Sort by chromosome and then position
-24. Make a Region column
-25. enter the value 1 in first row of the Region column.
-26. In the second row of the Region column, enter the following formula to specify a window of 250,000 base pairs around each lead variant: 
+23. add filter to  
+24. Sort by chromosome and then position
+25. Make a Region column
+26. enter the value 1 in first row of the Region column.
+27. In the second row of the Region column, enter the following formula to specify a window of 250,000 base pairs around each lead variant: 
 `=IF(N2=N3, IF(O3<(O2+250000), Q2, Q2+1), Q2+1)`
 _Note1: You may need to modify the formula so that it points to the correct column – In our example N is the chromosome column, O is the position column and Q is the Region column._
 _Note2: the correctness of this formula depends on the rows being sorted by chromosome and position and on the first row having Region #1 in it._
 _Note3: this formula works as follows If N2 equals N3, it means the chromosome has not changed, so check to see if the position is within the window. If so, extend the region, if not, start a new region. If N2 does not equal N3, we are at a new region, so the region counter (Q2) should be increased._ 
-27. copy and paste this formula into each of the rows in the Region column except for the first row. 
+27. copy and paste this formula into each of the rows in the Region column except after the first row. 
+28. 
 
 
 
