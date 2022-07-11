@@ -4,14 +4,14 @@ This repository contains a tutorial with instructions for synthesizing GWAS resu
 This tutorial is a walk-through for generating a putative causal gene network from NHGRI/EBI GWAS results. 
 
 ## Main steps: 
-### 1. get genome-wide significant lead variants for a trait of interest from the GWAS catalog 
+### 1. get genome-wide significant regions and corresponding lead variants for a trait of interest from the GWAS catalog 
 [https://www.ebi.ac.uk/gwas]
 ### 2. annotate them (here we use published results from open targets genetics locus 2 gene pipeline)
 [https://genetics.opentargets.org/]
 ### 3. enter these genes into the string database. (Protein-Protein Interaction Networks & Functional Enrichment Analysis)
 [https://string-db.org]
 
-## Step 1: get genome-wide significant lead variants
+## Step 1: get genome-wide significant regions and corresponding lead variants
 ### download table of published GWAS variants
 1. go to NHGRI/EBI GWAS catalog: https://www.ebi.ac.uk/gwas
 2. enter your trait of interest into the search bar
