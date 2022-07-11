@@ -64,12 +64,15 @@ _Note3: this formula works as follows If N2 equals N3, it means the chromosome h
 31. copy Regions column and paste as values into the same column
 32. sort by Region, then P-value
 33. Make a "Lead Variant" column
-34. In the second row of the Final Table column, enter this forumla to specify the lead variant: 
-`=IF(Q1=Q2, 0, 1)`
+34. In the second row of the Lead Variant column, enter this forumla to specify the lead variant: 
+`=IF(Q1=Q2, True, False)`
 
 _Note: You may need to modify the formula so that it points to the correct column – In our example Q is the Region column._
 
-35. copy Lead Variant
+35. copy Lead Variant column and paste as values into the same column
+36. filter on "TRUE". 
+37. copy filtered values to a new worksheet.
+38. You now have all of the genome-wide significant regions and the correpsonding reported lead variant for your trait of interest.
 
 
 
