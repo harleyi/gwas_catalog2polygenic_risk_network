@@ -74,14 +74,16 @@ _Note: You may need to modify the formula so that it points to the correct colum
 37. copy filtered values to a new worksheet.
 38. You now have all of the genome-wide significant regions and the correpsonding reported lead variant for your trait of interest.
 
-## Step 2. annotate them (here we use published results from open targets genetics locus 2 gene pipeline)
+## Step 2. annotate the regions with putative causal genes 
+_Note: here we use published results from open targets genetics locus 2 gene pipeline, using an alternative approach, such as FUMA [https://fuma.ctglab.nl/] to map SNPs to putative causal genes could also be used_
 39. go to open targets genetics. 
 40. search for your trait of interest.
 41. one-by-one select each published GWAS:    
     42. save the tsv (tab separated values) file and open it in excel or similar spreadsheet viewer.   
     43. for each Lead Variant with an entry in the L2G column, annotate the corresponding region from the "genome-wide significant regions and the corresponding reported lead variant" file from Step 1.   
-    _Note: According to Open Targets Genetics, the Lead Variants with L2G annotation represent "Genes prioritised by our locus-to-gene model with score ≥ 0.5"_ See: https://genetics-docs.opentargets.org/our-approach/prioritising-causal-genes-at-gwas-loci-l2g for further details.
-    45.  
+    _Note: According to Open Targets Genetics, the Lead Variants with L2G annotation represent "Genes prioritised by our locus-to-gene model with score ≥ 0.5"_    
+    See L2G description [https://genetics-docs.opentargets.org/our-approach/prioritising-causal-genes-at-gwas-loci-l2g] for further details.   
+    44.  
 
 
 
