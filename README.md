@@ -104,7 +104,7 @@ _Note: Your list of putative causal genes will almost certainly be less than the
 57. open cytoscape on your computer. [https://cytoscape.org/]
 58. click "send network to cytoscape".
 
-59. If you do not have additional disease networks (or other networks of interest) in cytoscape, build them and import them into cytoscape (either through STRING web interface "end network to cytoscape" or by exporting network to file and importing multiple networks of interest from files into a new cytoscape session. 
+59. If you do not have additional disease networks (or other networks of interest) in cytoscape, build them and import them into cytoscape (either through STRING web interface "send network to cytoscape" or by exporting network to file and importing multiple networks of interest from files into a new cytoscape session. 
 
 60. Merge networks of interest in cytoscape [Tools --> Merge, Networks]
    – first using intersection [this is the count of overlapping genes between the two networks]
