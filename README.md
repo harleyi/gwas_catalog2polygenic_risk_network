@@ -14,6 +14,8 @@ This tutorial is a walk-through for generating a putative causal gene network fr
 ## Graphical Overview:
 [overview]: https://github.com/harleyi/gwas_catalog2polygenic_risk_network/blob/main/images/gwas_l2g_STRING_polygenic_networks_overview%20(1).pdf
 
+[overview]
+
 ## Step 1: get genome-wide significant regions and corresponding lead variants
 ### download table of published GWAS variants
 1. go to NHGRI/EBI GWAS catalog: https://www.ebi.ac.uk/gwas
