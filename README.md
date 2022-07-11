@@ -92,6 +92,36 @@ _Note: Your list of putative causal genes will almost certainly be less than the
 47. copy any genes from the second column to the bottom of the list of genes. 
 
 ## Step 3. Use putative causal gene list from step 2 to query String database for disease gene protein protein interaction network. 
+48. Go to STRING [https://string-db.org/]
+49. click search
+50. Click multiple proteins on the left hand side
+51.	Remove commas and ensure that each putative causal gene is on a single line
+52. Enter the list of putative causal genes in the “list of names” box
+53. Select Homo sapiens as organism
+54.	Search 
+55.	Manually review gene names and descriptions to ensure that the correct mapping occurred. _Note: in some instances, the gene name and the protein name may not be the same._
+56.	Click continue 
+57. open cytoscape on your computer. [https://cytoscape.org/]
+58. click "send network to cytoscape".
+
+59. If you do not have additional disease networks (or other networks of interest) in cytoscape, build them and import them into cytoscape (either through STRING web interface "end network to cytoscape" or by exporting network to file and importing multiple networks of interest from files into a new cytoscape session. 
+
+60. Merge networks of interest in cytoscape [Tools --> Merge, Networks]
+   – first using intersection [this is the count of overlapping genes between the two networks]
+   – then using union [this is the entire list of genes present in either network] 
+   
+61. You can then use these numbers to calculate whether the gene overlap is greater than expected by chance between networks of interest using the cumulative distribution function of the hypergeometric distribution. 
+
+A simple calculator can be found: https://systems.crump.ucla.edu/hypergeometric/index.php
+
+For our example, we will take two networks, one with 54 nodes and one with 127 nodes.
+The Union of these two networks is a gene network with 172 nodes and the intersection 
+
+
+
+
+
+   
 
 
 
