@@ -15,7 +15,7 @@ This tutorial is a walk-through for generating a putative causal gene network fr
 
 ![gwas_l2g_STRING_polygenic_networks_overview2](https://user-images.githubusercontent.com/104035002/178368856-be6fa557-1a18-4634-8a02-3f1e23ea3364.jpg)
 
-_Note: overview figure drawn using biorender.com/ software_
+_Note: overview figure drawn with Biorender [https://biorender.com/] software_
 
 ## Step 1: get genome-wide significant regions and corresponding lead variants
 ### download table of published GWAS variants
