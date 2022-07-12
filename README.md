@@ -10,6 +10,7 @@ This tutorial is a walk-through for generating a putative causal gene network fr
 [https://genetics.opentargets.org/]
 ### 3. enter these genes into the string database. (Protein-Protein Interaction Networks & Functional Enrichment Analysis)
 [https://string-db.org]
+### _(Optional)_ 4. find the intersection between two gene networks and calculate whether greater than expected by chance.
 
 ## Graphical Overview:
 
@@ -116,6 +117,7 @@ _Note: Your list of putative causal genes will almost certainly be less than the
    – first using intersection [this is the count of overlapping genes between the two networks]
    – then using union [this is the entire list of genes present in either network] 
    
+## _(Optional)_ Step 4: Calculate overlap between two gene networks using hypergeometric distribution 
 61. You can then use these numbers to calculate whether the gene overlap is greater than expected by chance between networks of interest using the cumulative distribution function of the hypergeometric distribution. 
 
 A simple calculator can be found: https://systems.crump.ucla.edu/hypergeometric/index.php
