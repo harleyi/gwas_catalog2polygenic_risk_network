@@ -1,5 +1,8 @@
 # gwas_catalog2polygenic_risk_network
 This repository contains a tutorial with instructions for synthesizing GWAS results as a putative causal gene network. 
+Key screen shots can be found in the /images/ folder. 
+[https://github.com/harleyi/gwas_catalog2polygenic_risk_network/tree/main/images]
+
 # Purpose
 This tutorial is a walk-through for generating a putative causal gene network from NHGRI/EBI GWAS results. 
 
